@@ -1,20 +1,20 @@
 <p align="center"><img title="redux-active" src="docs/mongoose-patch-history.png" width="519" style="margin-top:20px;"></p>
 
-[![npm version](https://badge.fury.io/js/mongoose-patch-history.svg)](https://badge.fury.io/js/mongoose-patch-history) [![Build Status](https://travis-ci.org/codepunkt/mongoose-patch-history.svg?branch=master)](https://travis-ci.org/codepunkt/mongoose-patch-history) [![Greenkeeper badge](https://badges.greenkeeper.io/codepunkt/mongoose-patch-history.svg)](https://greenkeeper.io/) [![Known Vulnerabilities](https://snyk.io/test/github/codepunkt/mongoose-patch-history/badge.svg)](https://snyk.io/test/github/codepunkt/mongoose-patch-history:package.json?targetFile=package.json) [![Coverage Status](https://coveralls.io/repos/github/codepunkt/mongoose-patch-history/badge.svg?branch=master)](https://coveralls.io/github/codepunkt/mongoose-patch-history?branch=master)
+[![npm version](https://badge.fury.io/js/mongoose-patch-history.svg)](https://badge.fury.io/js/mongoose-patch-history) [![Build Status](https://travis-ci.org/compwright/mongoose-patch-history.svg?branch=master)](https://travis-ci.org/compwright/mongoose-patch-history) [![Greenkeeper badge](https://badges.greenkeeper.io/compwright/mongoose-patch-history.svg)](https://greenkeeper.io/) [![Known Vulnerabilities](https://snyk.io/test/github/compwright/mongoose-patch-history/badge.svg)](https://snyk.io/test/github/compwright/mongoose-patch-history:package.json?targetFile=package.json) [![Coverage Status](https://coveralls.io/repos/github/compwright/mongoose-patch-history/badge.svg?branch=master)](https://coveralls.io/github/compwright/mongoose-patch-history?branch=master)
 
 Mongoose Patch History is a mongoose plugin that saves a history of [JSON Patch](http://jsonpatch.com/) operations for all documents belonging to a schema in an associated "patches" collection.
 
 ## Installation
 
-    $ npm install mongoose-patch-history
+    $ npm install @compwright/mongoose-patch-history
 
 ## Usage
 
-To use **mongoose-patch-history** for an existing mongoose schema you can simply plug it in. As an example, the following schema definition defines a `Post` schema, and uses mongoose-patch-history with default options:
+To use **@compwright/mongoose-patch-history** for an existing mongoose schema you can simply plug it in. As an example, the following schema definition defines a `Post` schema, and uses @compwright/mongoose-patch-history with default options:
 
 ```javascript
 import mongoose, { Schema } from 'mongoose'
-import patchHistory from 'mongoose-patch-history'
+import patchHistory from '@compwright/mongoose-patch-history'
 
 const PostSchema = new Schema({
   title: { type: String, required: true },

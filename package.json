@@ -1,9 +1,12 @@
 {
-    "name": "mongoose-patch-history",
+    "name": "@compwright/mongoose-patch-history",
     "version": "1.3.0",
     "description": "Mongoose plugin that saves a history of JSON patch operations for all documents belonging to a schema in an associated 'patches' collection",
     "main": "lib/index.js",
     "author": "Christoph Werner <christoph@codepunkt.de>",
+    "contributors": [
+        "Jonathon Hill <jhill9693@gmail.com>"
+    ],
     "license": "MIT",
     "dependencies": {
         "fast-json-patch": "^2.0.4",
@@ -36,9 +39,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/gonsfx/mongoose-patch-history"
+        "url": "git://github.com/compwright/mongoose-patch-history"
     },
-    "bugs": "https://github.com/gonsfx/mongoose-patch-history/issues",
+    "bugs": "https://github.com/compwright/mongoose-patch-history/issues",
     "keywords": [
         "mongo",
         "Mongo",
